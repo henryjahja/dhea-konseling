@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        ul.cssMenu, ul.cssMenu ul
+        {
+        	list-style:none;
+        	margin:0; padding:0;
+        	position: relative;
+        }
+		
+		/*Style for 1st level menu header*/
+        ul.cssMenu li
+        { 
+        	position: relative; 
+        	float: left; 
+        	zoom: 1; /*Needed for IE*/
+        	background: #DDDDDD; /*background color of menu header (1st level)*/
+        }
+        ul.cssMenu li:hover
+        { 
+        	background: #AAAAAA /*background color of menu header (1st level) on hover*/; 
+        }
+        ul.cssMenu li a
+        {
+			/*Menu link styles*/
+        	display: block; 
+        	padding: 5px; 
+        	color:#000000;
+        	font-family: Arial, Times New Roman, Tahoma;
+        	font-size: 12px;
+        }
+        
+        /* Building menu items - for 2nd and more level menu items*/
+        ul.cssMenu ul 						
+        { 
+        	display:none; /*initially menu item is hidden*/
+        	position: absolute; /*absolute positioning is important for menu to float*/
+			width: 150px; 
+			
+			/*Formating of menu items*/
+        	border:1px solid #AAAAAA;
+        	padding:1px;
+        	background:#FFFFFF;
+			
+			/*optional - to change position of 2nd level menu item*/
+			top: 100%; 
+        	left: 0; 
+        }
+        ul.cssMenu ul li
+        { 
+        	background: #F5F5F5; 
+        	color: #000; 
+			border-bottom: 1px solid #DDDDDD; 
+			float: none; 
+		}
+									  
+        ul.cssMenu ul li a
+        { 
+        	width: 100%; 
+        	display: block; 
+        	color:#000000;
+        } 
+
+        /* Menu item position for 3rd level and more */
+        ul.cssMenu ul ul
+        { 
+        	left: 100%; 
+        	top: 0; 
+        }
+        
+        /* Hover effect for menu*/
+        ul.cssMenu li:hover > ul 			
+        { 
+        	display:block;
+        }
+    </style>
+</head>
+<body>
+	<div style="height:25px;">
+    <ul class="cssMenu">
+        <li>
+            <a href="#">menu1</a>           
+            <ul>
+                <li><a href="#">item1</a></li>
+                <li><a href="#">item2</a></li>
+                <li><a href="#">item3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">menu2</a>
+            <ul>
+                <li><a href="#">item1</a></li>
+                <li><a href="#">item2</a></li>
+                <li><a href="#">item3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">menu3</a>
+            <ul>
+                <li><a href="#">item1</a>
+                    <ul>
+                        <li><a href="#">item1</a></li>
+                        <li><a href="#">item2</a></li>
+                        <li><a href="#">item3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">item2</a></li>
+                <li><a href="#">item3</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+
+    <h2>
+        Welcome to CodeIssue.com!
+    </h2>
+    <p>
+        Solve and resolve coding issues at <a href="http://www.codeissue.com" title="CodeIssue.com">www.codeissue.com</a>.
+    </p>
+	<p>
+		Hover over menu items !!!
+	</p>
+</body>
+</html>

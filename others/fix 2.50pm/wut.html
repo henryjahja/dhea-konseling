@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>CSS Menu in IE6</title>
+    <style type="text/css">
+        ul.cssMenu, ul.cssMenu ul
+		{
+			list-style:none;
+			margin:0; padding:0;
+			position: relative;
+		}
+		ul.cssMenu ul 						
+		{ 
+			display:none; /*initially menu item is hidden*/
+			position: absolute; /*absolute positioning is important for menu to float*/
+		}
+		/* Hover effect for menu*/
+		ul.cssMenu li:hover > ul 			
+		{ 
+			display:block;
+		}
+    </style>
+</head>
+<body>
+    <ul class="cssMenu">
+	<li>
+		<a href="#">menuItem1</a>           
+		<ul>
+			<li><a href="#">item1</a></li>
+			<li><a href="#">item2</a></li>
+			<li><a href="#">item3</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">menuItem1</a>           
+		<ul>
+			<li><a href="#">item1</a></li>
+			<li><a href="#">item2</a></li>
+			<li><a href="#">item3</a></li>
+		</ul>
+	</li>
+</ul>
+</body>
+</html>

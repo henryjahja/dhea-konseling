@@ -1,0 +1,15 @@
+Upload jquery.simpleSlide_min.js to your website and add a new link to the JavaScript in the <head> section (top) of your page.
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.simpleSlide_min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        simpleSlide({
+		    'set_speed': 300,
+		    'swipe': 'true',
+		    'status_width': 20,
+			'status_color_outside': '#DDD',
+			'status_color_inside': '#2184B1'
+		});
+	});
+</script>

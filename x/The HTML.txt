@@ -1,0 +1,42 @@
+<div id="slider">
+	<div class="simpleSlide-window" rel="0">
+	    <div class="simpleSlide-tray" rel="0">
+	        <div class="simpleSlide-slide" rel="0">
+	           <img src="img/image1.jpg" alt="" />
+	        </div>
+	        <div class="simpleSlide-slide" rel="0">
+	           <img src="img/image2.jpg" alt="" />
+	        </div>
+	        <div class="simpleSlide-slide" rel="0">
+	           <img src="img/image3.jpg" alt="" />
+	        </div>
+	        <div class="simpleSlide-slide" rel="0">
+	           <img src="img/image4.jpg" alt="" />
+	        </div>
+	    </div>
+	</div>
+	
+	<div id="simpleSlide-nav">
+		<div class="left-button pointer" rel="0"><img src="img/left.png" alt="" /></div>
+		<div class="right-button pointer" rel="0"><img src="img/right.png" alt="" /></div>
+	</div>
+	
+	<div id="status-tray">
+		<div class="simpleSlideStatus-tray" rel="0">
+		    <div class="simpleSlideStatus-window" rel="0"></div>
+		</div>
+	</div>
+	
+	<!-- //////////////////////////////////////////////////
+	//////////////////  Use only one.  ////////////////////
+	///////////////////////////////////////////////////////
+	<div id="simpleSlide-jump-to">
+		<div class="jump-to pointer" rel="0" alt="1"></div>
+		<div class="jump-to pointer" rel="0" alt="2"></div>
+		<div class="jump-to pointer" rel="0" alt="3"></div>
+		<div class="jump-to pointer" rel="0" alt="4"></div>
+	</div>
+	/////////////////////////////////////////////////// -->
+</div><!-- end #slider -->
+
+Note: You can have either the status-tray section or the commented out simpleSlide-jump-to section above. If you use the jump-to section, you need to copy and paste one of the inner jump-to div's for every slide and increment the numbers in the alt tag.
